@@ -27,8 +27,8 @@ OpenSesame makes this easy:
 
 ## Is it fast yet?
 
-On my system, the initial working version immediately ran at reading 130 000 words per second.
-I thought that should be good enough for anyone who wouldn't want to write a custom one anyway.
+On my 5 year old CPU, the initial working version immediately ran at reading 130 000 words per
+second. I thought that should be good enough for anyone who wouldn't write a custom one anyway.
 
 To see for yourself, run `test.py`.
 
