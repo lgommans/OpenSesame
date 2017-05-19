@@ -3,13 +3,13 @@
 from open_sesame import OpenSesame
 import os, time
 
-f = open("/tmp/test", "wb")
+f = open("test", "wb")
 f.write(b"One  two three 1 2 3\r\n4\r5\n6\n7\r\n8 \t\t29\na line with some words!\n")
 f.write(b"asdfasdfasdfasdf " * (1000 * 1000))
 f.close()
 print('Wrote 16MB testdata')
 
-f = OpenSesame("/tmp/test")
+f = OpenSesame("test")
 One_space = f.bytes(4)
 two = f.readUntil([" "])
 three = f.word()
@@ -75,5 +75,5 @@ tt = time.time() - t # time taken
 print("Time to read 1 million words: {} seconds".format(round(tt * 100) / 100))
 print("{} 000 words per second".format(round(1000 / tt)))
 
-os.unlink('/tmp/test')
+os.unlink('test')
 
