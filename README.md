@@ -53,18 +53,20 @@ Mainly, you'd use the following functions:
 
     line = f.line() # Reads until \r\n, \n or \r (in that order of preference).
 
+    f.close() # Close the read handle
+
 Aliases exist, so you don't have to remember which name I chose:
 
     f.readline() # instead of .line()
 
-	f.string() # instead of .word()
+    f.string() # instead of .word()
 
-	f.num() # instead of .number()
-	f.float() # instead of .number()
-	f.double() # instead of .number()
+    f.num() # instead of .number()
+    f.float() # instead of .number()
+    f.double() # instead of .number()
 
-	f.integer() # instead of .int()
+    f.integer() # instead of .int()
 
-	f.read(length) # instead of .bytes(length)
-	f.raw(length) # instead of .bytes(length)
+    f.read(length) # instead of .bytes(length)
+    f.raw(length) # instead of .bytes(length)
 

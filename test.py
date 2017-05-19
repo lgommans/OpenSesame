@@ -74,6 +74,7 @@ for i in range(0, 1000 * 1000):
 tt = time.time() - t # time taken
 print("Time to read 1 million words: {} seconds".format(round(tt * 100) / 100))
 print("{} 000 words per second".format(round(1000 / tt)))
+f.close()
 
 os.unlink('test')
 

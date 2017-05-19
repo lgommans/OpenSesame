@@ -11,6 +11,9 @@ class OpenSesame:
             # using seek() and copy the whole block at once.
             raise Exception("Input must be seekable!")
 
+    def close(self):
+        self.file_handle.close()
+
     def int(self):
         """ Read the next word and return it as an int """
         return int(self.word())
