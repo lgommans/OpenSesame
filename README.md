@@ -7,9 +7,10 @@ Replacement for `open()` in python.
 Reading text files with data in C++ is surprisingly easy:
 
     int main() {
-        double* array;
-        File myfile("data.txt");
+        ifstream myfile;
+        myfile.open("data.txt");
         int records << myfile;
+        double* array = new double[records];
         for (int i = 0; i < records; i++) {
             array[i] << myfile;
         }
